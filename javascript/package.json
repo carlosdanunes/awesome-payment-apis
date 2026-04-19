@@ -1,13 +1,13 @@
 {
-  "name": "silapay-javascript-examples",
-  "version": "1.0.0",
-  "description": "Exemplos de integração Silapay em JavaScript",
-  "main": "boleto.js",
-  "scripts": {
-    "boleto": "node boleto.js"
-  },
-  "dependencies": {
-    "axios": "^1.7.2",
-    "dotenv": "^16.4.5"
-  }
+    "name": "silapay-javascript-examples",
+    "version": "1.0.0",
+    "description": "Exemplos de integração Silapay em JavaScript",
+    "main": "boleto.js",
+    "scripts": {
+        "boleto": "node boleto.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.2",
+        "dotenv": "^16.4.5"
+    }
 }
