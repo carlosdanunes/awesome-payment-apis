@@ -1,0 +1,20 @@
+{
+  "name": "silapay-connector-ts",
+  "version": "1.0.0",
+  "description": "Conector unificado de pagamentos em TypeScript — Silapay, MercadoPago, Adyen",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "exemplo": "tsx exemplo.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

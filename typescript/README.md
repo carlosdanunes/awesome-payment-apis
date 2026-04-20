@@ -1,15 +1,4 @@
-# TypeScript — Silapay Integration
 
-> Mês 1 do roadmap. Exemplos com NestJS e Node.js puro.
-
-## Conteúdo planejado
-
-- [ ] PIX CashIn (gerar QR Code)
-- [ ] PIX CashOut (transferir para chave PIX)
-- [ ] Cartão de crédito
-- [ ] Boleto bancário
-- [ ] Webhook handler
-- [ ] Autenticação JWT + Redis
 
 ## Stack
 
@@ -39,3 +28,22 @@ npm run start:dev
 | `node-cartao.ts` | Exemplo mínimo — cartão de crédito |
 | `node-boleto.ts` | Exemplo mínimo — boleto bancário |
 | `webhook-handler.ts` | Receber e processar postback da Silapay |
+
+## Conector unificado
+
+Existe uma implementação inicial em `silapay-connector/` com o mesmo padrão das versões JavaScript e Python:
+
+- `PaymentConnector` com provider padrão `silapay`
+- métodos unificados: `pix(dados)`, `boleto(dados)`, `cartao(dados)` e `saldo()`
+- provider real da Silapay
+- stubs estruturados para MercadoPago e Adyen
+
+### Como testar o conector
+
+```bash
+cd typescript/silapay-connector
+npm install
+cp .env.example .env
+npm run build
+npm run exemplo
+```
