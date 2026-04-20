@@ -1,0 +1,13 @@
+{
+  "name": "silapay-connector",
+  "version": "1.0.0",
+  "description": "Conector unificado de pagamentos — Silapay, MercadoPago, Adyen",
+  "main": "index.js",
+  "scripts": {
+    "exemplo": "node exemplo.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  }
+}
